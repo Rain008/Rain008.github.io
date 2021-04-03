@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #one {
+            border: solid;
+            height: 100px;
+            width: 100px;
+        }
+
+        #two {
+            border: solid;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+
+        #three {
+            border: solid;
+            display: inline;
+            width: 100px;
+            height: 100px;
+            font-size: 100px;
+        }
+
+        #four {
+            border: solid;
+            width: 100px;
+            height: 100px;
+            display: none;
+        }
+
+        #five {
+            border: solid;
+            width: 100px;
+            height: 100px;
+            visibility: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--   #one+#two+#three + tab-->
+    <div id="one">contents.</div>
+    <!--
+     Block element 
+      1. Width takes whole line
+      2. No height
+      3. Set width and height
+-->
+    <div id="two">More contents.</div>
+    <!--    Inline block elements:
+  1. No width and height (point)
+  2. Width and height can be set (style)
+   -->
+    <br>
+    <div id="three">Even more contents.</div>
+    <!--    
+Inline element
+1. Width=0
+2. Has height
+3. Cannot set width and height
+4. Height can only be set with font size
+-->
+
+    <div id="four"> Write some more contents.</div>
+    <!--
+Display: none makes the whole thing invisible 
+-->
+
+
+    <div id="five">Write some more weird contents :D</div>
+    <!--
+Visibility: none; makes it unvisible, but the text is still there
+-->
+
+
+</body>
+
+</html>

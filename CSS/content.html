@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul {
+            font-size: 40px;
+            /*            this is not good when we have a large image */
+            /*            list-style-image: url('https://images.pexels.com/photos/2815028/pexels-photo-2815028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');*/
+
+            /*how to use large image as bullet point */
+            list-style: none;
+        }
+
+        li {
+            /*            border: solid;*/
+        }
+
+        li:before {
+            /* create an inline element */
+            content: '';
+            /*            border: solid red;*/
+
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-image: url(https://images.pexels.com/photos/3363622/pexels-photo-3363622.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+            background-size: contain;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Playing is a good attitude</li>
+        <li>Be flexible</li>
+        <li>Stay foolish, stay hungry</li>
+    </ul>
+
+</body>
+
+</html>

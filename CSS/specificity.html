@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* specificity is how specific the css selector is. */
+        /* id selector is the most specific because it is only ONE unique id. */
+
+        /* Tag selector */
+        ul {
+            font-size: 50px;
+            color: purple;
+        }
+
+        /* id selector */
+        #first {
+            color: green;
+        }
+
+        /* class selector */
+        .first {
+            color: royalblue;
+        }
+
+        li {
+            color: red !important;
+        }
+
+        html body ul li {
+            color: fuchsia !important;
+        }
+
+        li[data='second'] {
+            
+        }
+        
+        /* li changes color too (just ul selector) because li is in ul and it inherits the color. This is called cascading. */
+        /* Cascading is like a waterfall. */
+        /* Cascading Style Sheet: CSS */
+
+    </style>
+</head>
+
+<body>
+    <!-- inline css < !important < id < class < tag -->
+    <!-- long selector > short selector -->
+    <!-- long name means long selector (html body ul li ) -->
+    <!-- if same specific, the order matters -->
+    <ul>
+        <li id='first' class="first" style="color: lime !important">Hot dog</li>
+        <li>Poutine</li>
+        <li>Pizza</li>
+    </ul>
+
+</body>
+
+</html>

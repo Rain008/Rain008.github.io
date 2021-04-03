@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #mouth {
+            border: solid;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+
+        .corner {
+            border: solid;
+            width: 20px;
+            position: relative;
+
+        }
+
+        .left {
+            top: 170px;
+            transform: rotate(-55deg);
+            left: 20px;
+        }
+
+        .right {
+            top: 166px;
+            transform: rotate(45deg);
+            left: 155px;
+
+        }
+        
+/*        fixed position is relative to the viewport*/
+        
+/*        absolute position is relative to the nearest non static container*/
+        
+/*        relative position is relative */
+        
+/* Why use position? Because even if you can use margin, some elements like inline elements dont use top or bottom margin. When to position smth, use position, and just use padding and margin to adjust*/
+    </style>
+</head>
+
+<body>
+    <div id="mouth">
+        <div class="corner left"></div>
+        <div class="corner right"></div>
+    </div>
+</body>
+
+</html>

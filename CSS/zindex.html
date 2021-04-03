@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  Z index is when you can overlap and move elements across the z axis (3D) -->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: darkslategray;
+            font-size: 50px;
+            color: white;
+        }
+
+        .one {
+            position: relative;
+            background-color: aquamarine;
+            z-index: 2;
+        }
+
+        .two {
+            position: relative;
+            bottom: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+/* default is static
+        -static is when element has no effects (eg. up, down, left, etc. has no effect on the element)*/
+    </style>
+</head>
+
+<body>
+    <!--    .box.one+.box.two-->
+    <div class="box one">1</div>
+    <div class="box two">2</div>
+</body>
+
+</html>
